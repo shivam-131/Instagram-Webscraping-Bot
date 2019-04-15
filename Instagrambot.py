@@ -9,7 +9,7 @@ import xlwt
 from xlwt import Workbook
 
 class App:
-    def __init__(self,username='webscraper7', password='shivam131' , target_username='photoclubiitk' , path="C:\\Users\\Shivam\\Desktop\\instaphotos"):
+    def __init__(self,username='webscraper7', password='shivam131' , target_username='danceclubiitk' , path="C:\\Users\\Shivam\\Desktop\\instaphotos"):
         self.username=username
         self.password=password
         self.target_username= target_username
@@ -170,7 +170,7 @@ class App:
             self.error= True
             print('Could not find no. of posts while trying to scroll down')            
 
-
 if __name__ == '__main__':
-    app= App()
-    
+    print("Please enter the target's username")
+    target_username=input()
+    app= App('webscraper7','shivam131',target_username)
